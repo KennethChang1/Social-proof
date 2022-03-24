@@ -5,15 +5,20 @@
     padding: 0;
 }
 
+picture{
+    position: absolute;
+}
+
 h1{
     color: #512051;
     line-height: 2rem;
+    margin-top: 5rem;
 }
 
 .intro-content{
     text-align: center;
     width: 20rem;
-    margin: 5rem auto 2rem;
+    margin: auto;
 }
 
 
@@ -21,10 +26,6 @@ h1{
     line-height: 1.5rem;
     color: #927B91;
     margin-top: 18px;
-}
-
-.wrapper > img:nth-of-type(1) {
-    position: absolute;
 }
 
 .star-reviews{
@@ -90,4 +91,87 @@ h1{
 
 .review-name > p:nth-of-type(2){
     color: #EE69A4;
+}
+
+@media screen and (min-width:700px){
+    picture{
+        top: 0;
+    }
+
+    h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .top-container{
+        display: flex;
+    }
+
+    .intro-content{
+        width: 28rem;
+        text-align: left;
+    }
+
+    .star-reviews{
+        margin-top: 5rem;
+    }
+
+    .star-reviews > div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 28rem;
+        height: 3em;
+        padding: 0;
+    }
+
+    .star-reviews > div:nth-of-type(1){
+        position: relative;
+        right: 13rem;
+    }
+
+    .star-reviews > div:nth-of-type(2){
+        position: relative;
+        right: 10rem;
+    }
+
+    .star-reviews > div:nth-of-type(3){
+        position: relative;
+        right: 7rem;
+    }
+
+    .star-reviews p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .star-reviews > div > div{
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .star-reviews > div > div *{
+        margin-right: 0.5rem;
+    }
+
+    .review{
+        display: flex;
+        margin-top: 3rem;
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .review-box{
+        position: relative;
+        width: 22rem;
+    }
+
+    .review-box:nth-of-type(1){
+        bottom: 1.5rem;
+    }
+
+    .review-box:nth-of-type(3){
+        bottom: -1.5rem;
+    }
+
 }
